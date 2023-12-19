@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: f979946513ecf5149a10fa8fd8627910, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.14901961}
+  m_Color: {r: 0.5943396, g: 0.007843138, b: 0.007843138, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -128,8 +128,8 @@ MonoBehaviour:
   _destroyTime: 0.32
   _id: 0
   _sr: {fileID: 6980083573419332163}
-  _activeColor: {r: 1, g: 1, b: 1, a: 1}
-  _inactiveColor: {r: 0, g: 0, b: 0, a: 0.14901961}
+  _activeColor: {r: 0.120666504, g: 0, b: 1, a: 1}
+  _inactiveColor: {r: 0.5943396, g: 0.008410451, b: 0.008410451, a: 0.87058824}
   _effect: {fileID: 5937424116475125862}
   _effectAC: {fileID: 3353888582798938748}
   _effectClip: {fileID: 7400000, guid: 9a1bbb6e302454a46b9763e4341872b7, type: 2}
@@ -220,7 +220,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &3353888582798938748
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -237,4 +237,5 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

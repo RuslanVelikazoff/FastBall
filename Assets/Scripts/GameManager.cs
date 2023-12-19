@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -115,7 +114,6 @@ public class GameManager : MonoBehaviour
         yield return MoveCamera (new Vector3(_cameraStartPos.x,-_cameraStartPos.y,_cameraStartPos.z));
 
         _endPanel.SetActive(true);
-        _endPanel.GetComponent<Image>().color = CurrentColor;
         _endScoreText.text = score.ToString();
 
         bool sound = (PlayerPrefs.HasKey(Constants.DATA.SETTINGS_SOUND) ?
@@ -127,7 +125,6 @@ public class GameManager : MonoBehaviour
         {
             _highScoreText.text = "NEW BEST";
 
-            //Play HighScore Animation
             _highScoreAnimator.Play(_highScoreClip.name,-1,0f);
 
             highScore = score;
@@ -155,16 +152,13 @@ public class GameManager : MonoBehaviour
         _scoreText.gameObject.SetActive(false);
         yield return MoveCamera(_cameraEndPos);
 
-        //Score
         _scoreText.gameObject.SetActive(true);
         score = 0;
         _scoreText.text = score.ToString();
         _scoreAnimator.Play(_scoreClip.name, -1, 0f);
 
-        //Set the Color for Score
         CurrentScoreId = 0;
 
-        //Set the Color
         _currentColorId = 0;
 
         StartCoroutine(SpawnObstacles());
